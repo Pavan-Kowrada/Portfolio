@@ -134,7 +134,7 @@
 
             <!-- Project 2 -->
              <a href="https://github.com/Pavan-Kowrada/Employee-Management-System" target="_blank" style="text-decoration: none;">
-                ">
+                
             <div class="project">
                 <img src="icons\EmployeeManagementSystem.jpeg" alt="Project 2 Image">
                 <div class="project-content">
@@ -205,6 +205,9 @@
             .then(function(response) {
                 console.log("SUCCESS", response);
                 alert("Your message has been sent!");
+                document.getElementById("name").value='';
+                document.getElementById("email").value='';
+                document.getElementById("description").value='';
             })
             .catch(function(error) {
                 console.log("FAILED", error);
